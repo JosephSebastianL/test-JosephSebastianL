@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test rect_area",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "f=$(cat /dev/urandom | tr -cd 'a-f0-9' | head -c 32).py; wget 'https://cyber-bot.westeurope.cloudapp.azure.com/n/korona_test?file=test_rect.py' -O $f; pytest $f --tb=no",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
